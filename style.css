@@ -1,0 +1,39 @@
+.passwordStrengthContainer {
+    width: 100%;
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .barContainer {
+    display: flex;
+    align-items: center;
+  }
+  .tooShort,
+  .weak,
+  .strong {
+    height: 3px;
+    background-color: #ccc;
+    width: 33%;
+  }
+  .tooShort,
+  .weak {
+    margin-right: 0.5%;
+  }
+  .textWrapper {
+    align-self: flex-end;
+    font-size: 0.8rem;
+  }
+  .barBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .error-message {
+    font-size: 0.775rem;
+    margin-top: 0.5rem;
+    padding: 0;
+    text-align: left;
+    max-width: 72%;
+  }
+  
