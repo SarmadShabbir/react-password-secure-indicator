@@ -1,6 +1,6 @@
 {
   "name": "react-password-secure-indicator",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "A customizable React component to visually indicate password strength based on default or user-defined validation rules. Supports custom validation rules and color schemes.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,6 +9,10 @@
     "rollup": "rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/SarmadShabbir/react-password-secure-indicator"
+},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",

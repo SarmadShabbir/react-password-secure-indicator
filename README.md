@@ -23,7 +23,7 @@ This package also depends on `react`. Please make sure you have it installed as 
 
 Here's a basic example of how to use the PasswordStrength component:
 
-```
+```html
 import React, { useState } from 'react';
 import PasswordStrength from 'react-password-secure-indicator';
 
