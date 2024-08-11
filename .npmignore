@@ -1,0 +1,43 @@
+# TypeScript source files
+src/
+
+# TypeScript configuration
+tsconfig.json
+
+# Rollup configuration (if not needed in the package)
+rollup.config.js
+
+# Build output (usually published)
+dist/
+
+# Style files (if not needed in the package)
+styles.css
+
+# Logs
+*.log
+
+# Documentation
+docs/
+*.md
+
+# Testing
+test/
+tests/
+*.spec.js
+*.test.js
+
+# Local environment files
+.env
+.env.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.nib
+*.sw?

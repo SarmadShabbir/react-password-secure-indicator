@@ -4,7 +4,7 @@ import { COLORS } from "./config";
 
 interface PasswordStrengthProps {
   password: string;
-  errorMsg?: string; // Marked as optional
+  errorMsg?: string;
   className?: string;
   errorMessages?: {
     tooShort?: string;
@@ -65,10 +65,18 @@ const PasswordStrength: React.FC<PasswordStrengthProps> = ({
   }, [password]);
 
   const passwordValidationError = (password: string) => {
-    const repeatingCharsRegex = /(.)\1{2,}/; // Regex for three consecutive repeating characters
+    const repeatingCharsRegex = /(.)\1{2,}/;
 
     if (isCustomValidations) {
-      // Existing custom validation logic...
+      if (!isCustomValidations.tooShort.regex.test(password)) {
+        setInfo(isCustomValidations.tooShort.errorMessage || "N/A");
+      } else if (!isCustomValidations.weak.regex.test(password)) {
+        setInfo(isCustomValidations.weak.errorMessage || "N/A");
+      } else if (!isCustomValidations.strong.regex.test(password)) {
+        setInfo(isCustomValidations.strong.errorMessage || "N/A");
+      } else {
+        setInfo("");
+      }
     } else {
       if (password.length > 7) {
         if (repeatingCharsRegex.test(password)) {
